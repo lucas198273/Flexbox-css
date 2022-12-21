@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid rgb(12, 11, 11);
+            max-width: 400px;
+
+        }
+        .item{
+            background-color: rgb(185, 158, 158);
+            color: gold;
+            font-size: 25px;
+            text-align: center;
+            margin: 5px;
+
+        }
+        .flex-1{
+            flex: 1; /*Grow=1, Shirink=1, Basis= 0*/
+        }
+        .flex-2{
+            flex: 2; /*Grow=2, Shirik=2, Basis=0*/
+        }
+    </style>
+</head>
+<body>
+    <p>flex: 1 </p>
+    <div class="flex-container">
+        <div class="item flex-1">AAA</div>
+        <div class="item flex-1">BBB</div>
+        <div class="item flex-1">CCC</div>
+        <div class="item flex-1">DDD</div>
+        <div class="item flex-1">EEE</div>
+    </div>
+    <p>flex: mix</p>
+    <div class="flex-container">
+        <div class="item flex-1">AAA</div>
+        <div class="item flex-2">BBB</div>
+        <div class="item flex-1">CCC</div>
+        <div class="item flex-2">DDD</div>
+        <div class="item flex-1">EEE</div>
+    </div>
+    <p>widht ignorado -> basis=0</p>
+    <p>min-whidht caso esta estabelecido na função { Nao sera ignorado}</p>
+    <div class="flex-container">
+        <div class="item flex-1">AAA</div>
+        <div class="item flex-2">BBB</div>
+        <div class="item flex-1">CCC</div>
+        <div class="item flex-2">DDD</div>
+        <div class="item flex-1">EEE</div>
+    </div>
+</body>
+</body>
+</html>

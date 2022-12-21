@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - order</title>
+    <style>
+        .flex-container{
+            display: flex;
+            max-width: 400px;
+            border:  1px solid black;
+            margin-bottom: 5px;
+        }
+        .item{
+            flex: 1;
+            background-color: rgb(80, 56, 202);
+            color: rgb(22, 22, 21);
+            text-align: center;
+            font-size: 26px;
+            margin: 4px;
+            order: 0; /*order por padrao é 0*/
+        }
+        .o1{
+            order: 1;
+        }
+        .o2{
+            order: 2;
+        }
+        .o3{
+            order: 3;
+        }
+        .o4{
+            order: 4;
+        }
+        .o5{
+            order: 5
+        }
+        .direcao{
+           flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <p>oder:0</p>
+    <div class="flex-container">
+        <div class="item">1A</div>
+        <div class="item">2B</div>
+        <div class="item">3C</div>
+        <div class="item">4D</div>
+        <div class="item">5E</div>
+    </div>
+    <p>oder: diferentes</p>
+    <div class="flex-container ">
+        <div class="item o5">1A</div>
+        <div class="item o4">2B</div>
+        <div class="item o3">3C</div>
+        <div class="item o2">4D</div>
+        <div class="item o1">5E</div>
+    </div>
+    <h1>columm</h1>
+    <p>oder: 0</p>
+    <div class="flex-container direcao">
+        <div class="item ">1A</div>
+        <div class="item ">2B</div>
+        <div class="item ">3C</div>
+        <div class="item ">4D</div>
+        <div class="item ">5E</div>
+    </div>
+    <p>oder: diferentes</p>
+    <div class="flex-container direcao">
+        <div class="item o5">1A</div>
+        <div class="item o4">2B</div>
+        <div class="item o3">3C</div>
+        <div class="item o2">4D</div>
+        <div class="item o1">5E</div>
+    </div>
+    <p>oder: aleatoria</p>
+    <div class="flex-container direcao">
+        <div class="item o3">1A</div>
+        <div class="item o1">2B</div>
+        <div class="item o5">3C</div>
+        <div class="item o2">4D</div>
+        <div class="item o4">5E</div>
+    </div>
+</body>
+</html>

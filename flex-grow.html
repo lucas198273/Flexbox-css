@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex-grow</title>
+    <style>
+        .flex-container{
+          display: flex;
+          border: 2px solid brown;
+          max-width: 900px;
+          margin-bottom: 20px;
+        }
+        .item{
+            background-color: orangered;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            color: gold;
+        }
+        .fg-0{
+            flex-grow: 0;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+        .fg-2{
+            flex-grow: 2;
+        }
+        .fg-3{
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <p>flex-grow:alternados {0,1,2,3}</p>
+    <div class="flex-container">
+       <div class="item fg-0">1</div>
+       <div class="item fg-1">2</div>
+       <div class="item fg-2">3</div>
+       <div class="item fg-3">4</div>
+    </div>
+    <p>flex-grow:1</p>
+    <div class="flex-container">
+        <div class="item fg-1">1</div>
+        <div class="item fg-1">2</div>
+        <div class="item fg-1">3</div>
+        <div class="item fg-1">4</div>
+     </div>
+     <p>flex-grow:2</p>
+     <div class="flex-container">
+         <div class="item fg-2">1</div>
+         <div class="item fg-2">2</div>
+         <div class="item fg-2">3</div>
+         <div class="item fg-2">4</div>
+      </div>
+      <p>flex-grow:3</p>
+      <div class="flex-container">
+          <div class="item fg-3">1</div>
+          <div class="item fg-3">2</div>
+          <div class="item fg-3">3</div>
+          <div class="item fg-3">4</div>
+       </div>
+     
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - aling-content</title>
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border:2px solid brown ;
+        }
+        .item{
+            background-color: black;
+            padding: 0 auto;
+            flex: 1;
+            text-align:center;
+            color: chartreuse;
+            margin: 4px;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+   <h1>align-content: stretch</h1>
+    <div class="container stretch">
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+
+
+    </div>
+    <h1> align-content: center</h1>
+    <div class="container center">
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        
+    </div>
+    <h1> align-content: flex-start</h1>
+    <div class="container flex-start">
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        
+    </div>
+    <h1> align-content: flex-end</h1>
+    <div class="container flex-end">
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        
+    </div>
+    <h1> align-content: space-around</h1>
+    <div class="container space-around">
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        
+    </div>
+    <h1> align-content: space-between ==> espaço igual entre conteudos</h1>
+    <div class="container space-between">
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        <div class="item">ola, este é o primeiro teste com aling content</div>
+        
+    </div>
+
+
+    
+</body>
+</html>
